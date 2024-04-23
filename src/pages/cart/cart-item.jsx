@@ -12,12 +12,12 @@ export const CartItem = (props) => {
                 <p>
                     <b> {productName} </b>
                 </p>
-            </div>
-            <p> ₱{price} </p>
-            <div className='countHandler'>
-                <button onClick={() => removeFromCart(id)}>-</button>
-                <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
-                <button onClick={() => addToCart(id)}>+</button>
+                <p> ₱{price} </p>
+                <div className='countHandler'>
+                    <button onClick={() => removeFromCart(id)}>-</button>
+                    <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
+                    <button onClick={() => addToCart(id)}>+</button>
+                </div>
             </div>
         </div>
     );
